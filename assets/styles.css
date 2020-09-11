@@ -40,6 +40,9 @@ body{
     font-size: 40px;
 }
 
+.temperature-desc{
+    text-transform: capitalize;
+}
 
 @media only screen and (max-width:768px){
 
