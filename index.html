@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href=".assets/styles.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="input_location">
+      <input
+        id="input_location"
+        type="text"
+        name="Location"
+        placeholder="Enter location"
+      />
+      <button id="find_weather" onclick="getWeather()" class="btn btn-primary">
+        Submit
+      </button>
+    </div>
+
+    <div class="location">
+      <h1 class="location-timezone">Timezone</h1>
+      <h1 class="location-city">City</h1>
+      <div class="weather-icon"><i class="fa fa-2x fa-poo-storm"></i></div>
+    </div>
+    <div class="temperature">
+      <div class="degree-section">
+        <h2 class="temperature-degree">34</h2>
+        <span>C</span>
+      </div>
+      <div class="temperature-desc">Its hot</div>
+    </div>
+
+    <script src="./assets/weather.js"></script>
+    <!-- <script src="./skycons.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script></script>
+  </body>
+</html>
