@@ -61,3 +61,7 @@ body{
     .input_location{
         margin-left: 0;
     }
+    .temperature-desc{
+        width:80%;
+    }
+}
