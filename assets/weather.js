@@ -9,8 +9,8 @@ let err_code;
 function getWeather() {
   let location = document.getElementById("input_location").value;
   console.log(location);
-  const test_api = "http://api.openweathermap.org/data/2.5/weather?q=";
-  const lat_lon_test_api = "http://api.openweathermap.org/data/2.5/weather?";
+  const test_api = "https://api.openweathermap.org/data/2.5/weather?q=";
+  const lat_lon_test_api = "https://api.openweathermap.org/data/2.5/weather?";
   const unit_key = "&units=metric&appid=88be660411fbf31290f307a42b5a312c";
 
   // Join api with input from input box
@@ -37,11 +37,11 @@ function getWeather() {
         long = data.coord.lon;
         temperatureDegree.textContent = data.main.temp;
         temperatureDescription.textContent = data.weather[0].description;
-        let iconURL = "http://openweathermap.org/img/wn/" + iconID + "@2x.png";
+        let iconURL = "https://openweathermap.org/img/wn/" + iconID + "@2x.png";
 
         $(".weather-icon").html("<img src='" + iconURL + "'>");
         const timezone_api =
-          "http://api.timezonedb.com/v2.1/get-time-zone?key=8KHQC990S2AQ&format=json&by=position&lat=" +
+          "https://api.timezonedb.com/v2.1/get-time-zone?key=8KHQC990S2AQ&format=json&by=position&lat=" +
           lat +
           "&lng=" +
           long +
